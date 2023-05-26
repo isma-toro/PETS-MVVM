@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingHorizontal="20dp"
+    android:layout_width="match_parent"
+    android:background="@color/Purple"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_user_profile"
+                android:contentDescription="ic_user_profile" />
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="Ismael Toro Sánchez-Bermejo"/>
+
+                <TextView
+                    android:id="@+id/txt_birthdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Birthdate : 24-01-01"/>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btnDelete"
+                android:layout_weight="3.3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_delete"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</LinearLayout>
